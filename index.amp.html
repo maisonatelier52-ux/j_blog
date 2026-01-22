@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" amp>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Blog - Homepage</title>
+
+    <!-- AMP Script -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- AMP Boilerplate CSS -->
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                visibility: visible
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        @font-face {
+            font-family: "Anton";
+            src: url("fonts/Anton-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "LexendDeca";
+            src: url("fonts/LexendDeca-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "LexendDeca";
+            src: url("fonts/LexendDeca-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .hero-bg {
+            object-fit: cover;
+        }
+
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.85),
+                    rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.1));
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .inner-content {
+            max-width: 1000px;
+            margin-left: 80px;
+            padding: 0 40px;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .text-content {
+            width: 80%;
+            color: #fff;
+        }
+
+        .small-text {
+            max-width: 620px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #d0d0d0;
+            margin: 0 0 10px 0;
+            font-family: "LexendDeca", Arial, sans-serif;
+        }
+
+        .text-content h1 {
+            font-size: 150px;
+            font-family: "Anton", sans-serif;
+            line-height: 0.95;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .image-content {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .right-image {
+            max-width: 420px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+        }
+
+        @media (max-width: 768px) {
+             .hero-overlay {
+    align-items: flex-start; 
+  }
+            .inner-content {  
+                margin-left: 0px;
+                padding: 0 20px;
+                width: 100%;
+                flex-direction: column;
+                text-align: start;
+            }
+
+            .text-content {
+                width: 100%;
+            }
+
+            .small-text {
+                max-width: 220px;
+                font-size: 13px;
+                line-height: 1.4;
+                color: #d0d0d0;
+                margin: 0 0 10px 0;
+            }
+
+            .text-content h1 {
+                font-size: 48px;
+            }
+
+            .image-content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .right-image {
+                max-width: auto;
+                height: 650px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- Background image -->
+        <amp-img src="img/hero-bg.webp" width="1920" height="1080" layout="fill" class="hero-bg">
+        </amp-img>
+
+        </amp-img>
+
+        <!-- Overlay content -->
+        <div class="hero-overlay">
+
+            <div class="inner-content">
+                <!-- LEFT TEXT -->
+                <div class="text-content">
+                    <p class="small-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                    </p>
+
+                    <h1>
+                        PROJECT<br>
+                        PORTFOLIO
+                    </h1>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="image-content">
+                    <amp-img src="img/julio-person.webp" alt="person" width="500" height="800" layout="intrinsic"
+                        class="right-image">
+                    </amp-img>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
