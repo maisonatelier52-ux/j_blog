@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en" amp>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,minimum-scale=1,initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <title>Julio Herrera Velutini</title>
 
     <!-- AMP Script -->
@@ -13,376 +11,446 @@
 
     <!-- AMP Boilerplate CSS -->
     <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      }
-
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden;
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         }
 
-        to {
-          visibility: visible;
-        }
-      }
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
 
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-
-        to {
-          visibility: visible;
-        }
-      }
-
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden;
+            to {
+                visibility: visible;
+            }
         }
 
-        to {
-          visibility: visible;
-        }
-      }
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
 
-      @keyframes -amp-start {
-        from {
-          visibility: hidden;
+            to {
+                visibility: visible;
+            }
         }
 
-        to {
-          visibility: visible;
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
         }
-      }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
     </style>
 
     <noscript>
-      <style amp-boilerplate>
-        body {
-          visibility: visible;
-        }
-      </style>
+        <style amp-boilerplate>
+            body {
+                visibility: visible;
+            }
+        </style>
     </noscript>
 
     <style amp-custom>
-      @font-face {
-        font-family: "Anton";
-        src: url("fonts/Anton-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
+        @font-face {
+            font-family: "Anton";
+            src: url("fonts/Anton-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
 
-      @font-face {
-        font-family: "LexendDeca";
-        src: url("fonts/LexendDeca-Regular.woff2") format("woff2");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
+        @font-face {
+            font-family: "LexendDeca";
+            src: url("fonts/LexendDeca-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
 
-      @font-face {
-        font-family: "LexendDeca";
-        src: url("fonts/LexendDeca-Bold.woff2") format("woff2");
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
+        @font-face {
+            font-family: "LexendDeca";
+            src: url("fonts/LexendDeca-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
 
-      body {
-        height: 100%;
-        overscroll-behavior: none;
-        -webkit-overflow-scrolling: auto;
-      }
-      .hero {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        background-color: black;
-      }
-
-      .hero-bg {
-        object-fit: cover;
-      }
-
-      .hero-overlay {
-        position: absolute;
-        inset: 0;
-
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-   .inner-content {
-  margin-left: 60px;
-  padding: 0 40px;
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-.inner-content > div:first-child {
-  width: 50%;
-  max-width: 50%;
-  position: relative;
-}
-
-
-
-      .text-content {
-        width: 100%;
-        color: #fff;
-      }
-
-      .small-text {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #d0d0d0;
-        margin: 0 0 10px 0;
-        font-family: "LexendDeca", Arial, sans-serif;
-      }
-
-      .text-below h1 {
-        width: 1100px;
-        font-size: 90px;
-        font-family: "Anton", sans-serif;
-        line-height: 0.95;
-        color: white;
-        letter-spacing: 3px;
-        margin: 0;
-        padding-top: 20px;
-      }
-
-      
-      .image-content {
-        width: 40%;
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .right-image {
-        max-width: auto;
-        position: absolute;
-        right: 15px;
-        bottom: 0;
-        z-index: 3;
-      }
-
-      .top-brand {
-        position: absolute;
-        top: 40px;
-        left: 100px;
-        font-family: "LexendDeca", Arial, sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        letter-spacing: 2px;
-        color: #f2f2f2;
-
-        text-transform: uppercase;
-        z-index: 4;
-      }
-
-      .arrow-wrap {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 25px;
-      }
-
-      .hero-arrow {
-        opacity: 0.9;
-      }
-
-      @media (max-width: 900px) {
-  /* Reverse name & description */
-  .text-section {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  /* Description block */
-  .text-content {
-    margin-top: 20px;
-  }
-
-  /* Arrow BELOW description */
-  .arrow-wrap {
-    order: 3;
-    margin-top: 15px;
-  }
-
-  /* Name (Julio) on top */
-  .text-below {
-    order: 1;
-  }
-
-  .text-below h1 {
-    font-size: 34px;
-    line-height: 1.1;
-    margin-bottom: 8px;
-  }
-
-  .small-text {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-}
-
-      @media (max-width: 900px) {
-        .top-brand {
-          top: 20px;
-          left: 40px;
-          font-size: 14px;
-          letter-spacing: 1.5px;
+        body {
+            height: 100%;
         }
 
         .hero {
-          position: relative;
-          width: 100%;
-          min-height: 100svh;
-          height: 100svh;
-          overflow: hidden;
-          background-color: black;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .hero-bg {
+            object-fit: cover;
         }
 
         .hero-overlay {
-          align-items: flex-start;
+            position: absolute;
+            inset: 0;
+
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .inner-content {
-          margin-left: 0px;
-          padding: 0 40px;
-          margin-top: 90px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+            margin-left: 60px;
+            padding: 0 40px;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
         }
+
+        .inner-content>div:first-child {
+            width: 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+
+
         .text-content {
-          width: 100%;
+            width: 70%;
+            color: #fff;
         }
 
         .small-text {
-          max-width: 220px;
-          font-size: 13px;
-          line-height: 1.4;
-          color: #d0d0d0;
-          margin: 0 0 10px 0;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #d0d0d0;
+            margin: 0 0 10px 0;
+
+            font-family: "LexendDeca", Arial, sans-serif;
+            position: relative;
+            display: inline-block;
         }
 
         .text-below h1 {
-          font-size: 37px;
+            width: 1100px;
+            font-size: 90px;
+            font-family: "Anton", sans-serif;
+            line-height: 0.95;
+            color: white;
+            letter-spacing: 3px;
+            margin: 0;
+            padding-top: 20px;
         }
 
+
         .image-content {
-          width: 100%;
-          display: flex;
-          justify-content: center;
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
         }
 
         .right-image {
-          max-width: 330px;
-          height: 350px;
+            max-width: auto;
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            z-index: 3;
+        }
+
+        .top-brand {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+            font-family: "LexendDeca", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            letter-spacing: 2px;
+            color: #f2f2f2;
+
+            text-transform: uppercase;
+            z-index: 4;
+        }
+
+        .arrow-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
         }
 
         .hero-arrow {
-          width: 90px;
-          height: auto;
+            opacity: 0.9;
         }
-      }
-      @media (min-width: 901px) and (max-width: 1200px) {
-          .right-image {
-          max-width: 560px;
-          height: 670px;
-        }
-        .text-below h1 {
-          font-size: 67px;
-        }
-      }
-    </style>
-  </head>
 
-  <body>
+        .mobile-layout {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            .inner-content>div:not(.mobile-layout) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .mobile-layout {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+ .mobile-brand {
+    position: absolute;
+    left: 12px;             
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    writing-mode: vertical-rl; 
+    
+    font-family: "LexendDeca", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    z-index: 5;
+  }
+            .mobile-image {
+                position: relative;
+            }
+
+            /* fade bottom */
+            .mobile-image amp-img {
+                display: block;
+                
+            }
+
+
+
+
+            .mobile-title {
+                color: white;
+                font-size: 37px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                margin-top: 40px;
+                font-family: "Anton", sans-serif;
+                line-height: 1;
+                letter-spacing: 3px;
+            }
+
+            .mobile-desc {
+                color: #ccc;
+                margin: 0;
+                line-height: 1.2;
+                max-width: 280px;
+                text-align: left;
+            }
+
+            .mobile-arrow {
+                margin-top: 15px;
+                opacity: 0.9;
+                text-align: end;
+            }
+
+            .top-brand {
+                  position: absolute;
+            top: 25px;
+            left: 40px;
+            font-family: "LexendDeca", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #f2f2f2;
+
+            text-transform: uppercase;
+            z-index: 4;
+            }
+
+            .menu-bar {
+                position: absolute;
+                top: 40px;
+                right: 20px;
+                z-index: 5;
+                cursor: pointer;
+            }
+
+            .hamburger-icon {
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                position: relative;
+            }
+
+            .hamburger-icon:before,
+            .hamburger-icon:after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                left: 0;
+                transition: 0.3s;
+            }
+
+            .hamburger-icon:before {
+                top: -10px;
+            }
+
+            .hamburger-icon:after {
+                top: 10px;
+            }
+
+            .mobile-menu {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                background-color: black;
+                color: white;
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+                gap: 10px;
+                z-index: 6;
+            }
+
+            .mobile-menu a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+            .mobile-menu.open {
+                display: flex;
+            }
+        }
+
+
+
+
+
+        @media (min-width: 901px) and (max-width: 1200px) {
+            .right-image {
+                max-width: 560px;
+                height: 670px;
+            }
+
+            .text-below h1 {
+                font-size: 67px;
+            }
+        }
+    </style>
+</head>
+
+<body>
     <!-- HERO SECTION -->
     <section class="hero">
-      <!-- Background image -->
+        <!-- Background image -->
 
-      <!-- Overlay content -->
-      <div class="hero-overlay">
-        <span class="top-brand">JMHV</span>
-        <div class="inner-content">
-          <!-- LEFT TEXT -->
-          <div>
-            <div class="text-section">
-                <div class="text-content">
-              <p class="small-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                <br />
-                sed do eiusmod tempor incididunt ut labore et dolore <br />magna
-                aliqua.e Lorem ipsum dolor sit amet, consectetur
-                <br />adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore.
-              </p>
-            </div>
-            <div class="text-below">
-              <h1>
-                Julio <br />
-                Herrera Velutini
-              </h1>
-            </div>
-            </div>
-            <div class="arrow-wrap">
-              <svg
-                class="hero-arrow"
-                width="220"
-                height="24"
-                viewBox="0 0 220 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <line
-                  x1="0"
-                  y1="12"
-                  x2="200"
-                  y2="12"
-                  stroke="white"
-                  stroke-width="2"
-                />
-                <polyline
-                  points="190,4 200,12 190,20"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
+        <!-- Overlay content -->
+        <div class="hero-overlay">
+            <span class="top-brand">JMHV</span>
+            <div class="inner-content">
+                <!-- LEFT TEXT -->
+                <div>
+                    <div class="text-section">
+                        <div class="text-content">
+                            <p class="small-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
 
-          <!-- RIGHT IMAGE -->
-          <div class="image-content">
-            <amp-img
-              src="img/julio.webp"
-              alt="person"
-              width="700"
-              height="720"
-              layout="intrinsic"
-              class="right-image"
-            >
-            </amp-img>
-          </div>
+                            </p>
+                        </div>
+                        <div class="text-below">
+                            <h1>
+                                Julio <br />
+                                Herrera Velutini
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="arrow-wrap">
+                        <svg class="hero-arrow" width="220" height="24" viewBox="0 0 220 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <line x1="0" y1="12" x2="200" y2="12" stroke="white" stroke-width="2" />
+                            <polyline points="190,4 200,12 190,20" fill="none" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="image-content">
+                    <amp-img src="img/julio.webp" alt="person" width="700" height="720" layout="intrinsic"
+                        class="right-image">
+                    </amp-img>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- MOBILE LAYOUT -->
+        <div class="mobile-layout">
+               <div class="mobile-brand">Prince of latam</div>
+            <div class="menu-bar" onclick="toggleMenu()">
+                <div class="hamburger-icon"></div>
+            </div>
+            <div class="content">
+                <div class="mobile-image">
+                    <amp-img src="img/julio.webp" alt="person" width="300" height="320" layout="fixed">
+                    </amp-img>
+
+                </div>
+
+                <h1 class="mobile-title">
+                    Julio <br /> Herrera Velutini
+                </h1>
+
+                <p class="mobile-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
+                    dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+                    sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+
+                <div class="mobile-arrow">
+                    <svg width="90" height="20" viewBox="0 0 220 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="12" x2="200" y2="12" stroke="white" stroke-width="2" />
+                        <polyline points="190,4 200,12 190,20" fill="none" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
     </section>
-  </body>
+</body>
+
 </html>
