@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <title>Blog - Homepage</title>
+    <title>Julio Herrera Velutini</title>
 
     <!-- AMP Script -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -119,8 +119,7 @@
         }
 
         .inner-content {
-            max-width: 1000px;
-            margin-left: 80px;
+            margin-left: 60px;
             padding: 0 40px;
             margin-top: 100px;
             display: flex;
@@ -130,12 +129,11 @@
         }
 
         .text-content {
-            width: 80%;
+            width: 100%;
             color: #fff;
-        }
 
+        }
         .small-text {
-            max-width: 620px;
             font-size: 18px;
             line-height: 1.6;
             color: #d0d0d0;
@@ -143,12 +141,16 @@
             font-family: "LexendDeca", Arial, sans-serif;
         }
 
-        .text-content h1 {
-            font-size: 150px;
+        .text-below h1 {
+           
+             width: 1100px;
+            font-size: 100px;
             font-family: "Anton", sans-serif;
             line-height: 0.95;
+            color: white;
             letter-spacing: 3px;
             margin: 0;
+            padding-top: 20px;
         }
 
         .image-content {
@@ -158,17 +160,51 @@
         }
 
         .right-image {
-            max-width: 420px;
+            max-width: auto;
             position: absolute;
-            right: 0;
+            right: 15px;
             bottom: 0;
             z-index: 3;
         }
 
+        .top-brand {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+            font-family: "LexendDeca", Arial, sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            letter-spacing: 2px;
+       color: #f2f2f2;
+
+            text-transform: uppercase;
+            z-index: 4;
+        }
+
+        .arrow-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.hero-arrow {
+    opacity: 0.9;
+}
+
         @media (max-width: 768px) {
-             .hero {
-    min-height: 100svh; 
-  }
+            .top-brand {
+                top: 20px;
+                left: 20px;
+                font-size: 12px;
+                letter-spacing: 1.5px;
+            }
+
+
+            .hero {
+                min-height: 100svh;
+            }
+
             .hero-overlay {
                 align-items: flex-start;
             }
@@ -176,7 +212,7 @@
             .inner-content {
                 margin-left: 0px;
                 width: 100%;
-                 padding: 10px;
+                padding: 10px;
                 flex-direction: column;
                 text-align: start;
                 margin-top: 30px;
@@ -194,7 +230,7 @@
                 margin: 0 0 10px 0;
             }
 
-            .text-content h1 {
+            .text-below h1 {
                 font-size: 47px;
             }
 
@@ -208,6 +244,10 @@
                 max-width: 320px;
                 height: 500px;
             }
+             .hero-arrow {
+        width: 90px;
+        height: auto;
+    }
         }
     </style>
 </head>
@@ -219,30 +259,56 @@
         <amp-img src="img/hero-bg.webp" width="1920" height="1080" layout="fill" class="hero-bg">
         </amp-img>
 
-        </amp-img>
+
 
         <!-- Overlay content -->
         <div class="hero-overlay">
 
+            <span class="top-brand">JMHV</span>
             <div class="inner-content">
                 <!-- LEFT TEXT -->
-                <div class="text-content">
-                    <p class="small-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        <div class="text-section">
+                    <div class="text-content">
+                        <p class="small-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         <br/> sed do eiusmod tempor incididunt ut labore et dolore <br/>magna aliqua.e Lorem ipsum dolor sit amet,
+                     
+                        consectetur    <br/>adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore.
                     </p>
 
-                    <h1>
-                        PROJECT<br>
-                        PORTFOLIO
+                  
+</div>
+<div class="text-below">
+      <h1>
+                        Julio <br>
+                        Herrera Velutini
                     </h1>
+      <div class="arrow-wrap">
+    <svg class="hero-arrow"
+         width="220"
+         height="24"
+         viewBox="0 0 220 24"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+        <line x1="0" y1="12" x2="200" y2="12"
+              stroke="white" stroke-width="2"/>
+        <polyline points="190,4 200,12 190,20"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+    </svg>
+</div>
+
                 </div>
+        </div>
 
                 <!-- RIGHT IMAGE -->
                 <div class="image-content">
-                    <amp-img src="img/julio-person.webp" alt="person" width="500" height="800" layout="intrinsic"
+                    <amp-img src="img/ju.png" alt="person" width="650" height="720" layout="intrinsic"
                         class="right-image">
                     </amp-img>
                 </div>
