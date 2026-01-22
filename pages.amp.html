@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" amp>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <title>Project Portfolio</title>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                visibility: visible
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        @font-face {
+            font-family: "NotoSansJP";
+            src: url("fonts/NotoSansJP-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "NotoSansJP";
+            src: url("fonts/NotoSansJP-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "NotoSansJP";
+            src: url("fonts/NotoSansJP-ExtraBold.woff2") format("woff2");
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #2b2b2b;
+        }
+
+        .page {
+            width: 100vw;
+            height: 100vh;
+            background: #2b2b2b;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+        .pill {
+            position: absolute;
+            padding: 8px 18px;
+            border-radius: 999px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+        }
+
+        .top-left {
+            top: 45px;
+            left: 65px;
+            font-family: "NotoSansJP", sans-serif;
+        }
+
+        .top-right {
+            top: 45px;
+            right: 65px;
+            font-family: "NotoSansJP", sans-serif;
+        }
+
+        .bottom-left {
+            bottom: 45px;
+            left: 65px;
+            font-family: "NotoSansJP", sans-serif;
+        }
+
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            width: 75%;
+
+        }
+
+        .center-title {
+            font-size: 110px;
+            font-weight: 800;
+            margin: 0;
+            line-height: 0.9;
+            font-family: "NotoSansJP", sans-serif;
+        }
+
+        .center-desc {
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.6;
+            margin-top: 30px;
+            font-family: "NotoSansJP", sans-serif;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 45px;
+            right: 60px;
+            width: 230px;
+            height: 24px;
+
+        }
+
+        @media (max-width: 768px) {
+            .center-title {
+                font-size: 50px;
+            }
+
+            .center-desc {
+                font-size: 12px;
+            }
+
+            .arrow {
+                width: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-content">
+            <div class="pill top-left">Creative Presentation</div>
+            <div class="pill top-right">reallygreatsite.com</div>
+            <div class="pill bottom-left">Alexander Aronowitz</div>
+
+            <div class="center-content">
+                <h1 class="center-title">Project<br>Portfolio</h1>
+                <p class="center-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat
+                </p>
+            </div>
+
+            <div class="arrow-wrap">
+                <svg class="arrow" viewBox="0 0 180 24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="12" x2="200" y2="12" stroke="white" stroke-width="2" />
+                    <polyline points="190,4 200,12 190,20" fill="none" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
