@@ -42,6 +42,24 @@
             font-style: normal;
             font-display: swap;
         }
+            @font-face {
+        font-family: "LexendDeca";
+        src: url("fonts/LexendDeca-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "LexendDeca";
+        src: url("fonts/LexendDeca-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+       
+
         html, body {
   margin: 0;
   padding: 0;
@@ -138,12 +156,14 @@
     .right h3 {
       font-size: 26px;
       margin-bottom: 16px;
+       font-family: "LexendDeca", Arial, sans-serif;
     }
 
     .right p {
       font-size: 16px;
       line-height: 1.4;
       opacity: 0.75;
+       font-family: "LexendDeca", Arial, sans-serif;
     }
 
      .arrow-wrap {
@@ -184,16 +204,13 @@
 
   flex-direction: column;
 }
-      .title {
-        font-size: 4px;
-      }
-
+      
       .arrow-wrap {
           display: none;
         }
 
          .title {
-    font-size: 37px;
+    font-size: 40px;
     
     letter-spacing: -0.01em; 
     
@@ -205,6 +222,8 @@
   transform: scaleY(1.15);
     transform-origin: top left;
 }
+
+    
  .right p {
       font-size: 14px;
       line-height: 1.4;
